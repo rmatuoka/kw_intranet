@@ -1,0 +1,33 @@
+<% title "Clients" %>
+
+<table>
+  <tr>
+    <th>Razao Social</th>
+    <th>Cnpj</th>
+    <th>Telefones</th>
+    <th>Emails</th>
+    <th>Contatos</th>
+    <th>Area Atuacao</th>
+    <th>Ramo</th>
+    <th>Obs</th>
+    <th>Contrato</th>
+  </tr>
+  <% for client in @clients %>
+    <tr>
+      <td><%= client.razao_social %></td>
+      <td><%= client.cnpj %></td>
+      <td><%= client.telefones %></td>
+      <td><%= client.emails %></td>
+      <td><%= client.contatos %></td>
+      <td><%= client.area_atuacao %></td>
+      <td><%= client.ramo %></td>
+      <td><%= client.obs %></td>
+      <td><%= client.contrato %></td>
+      <td><%= link_to "Show", client %></td>
+      <td><%= link_to "Edit", edit_client_path(client) %></td>
+      <td><%= link_to "Destroy", client, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Client", new_client_path %></p>

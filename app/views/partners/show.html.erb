@@ -1,0 +1,44 @@
+<% title "Partner" %>
+
+<p>
+  <strong>Razao Social:</strong>
+  <%= @partner.razao_social %>
+</p>
+<p>
+  <strong>Cnpj:</strong>
+  <%= @partner.cnpj %>
+</p>
+<p>
+  <strong>Telefones:</strong>
+  <%= @partner.telefones %>
+</p>
+<p>
+  <strong>Emails:</strong>
+  <%= @partner.emails %>
+</p>
+<p>
+  <strong>Contatos:</strong>
+  <%= @partner.contatos %>
+</p>
+<p>
+  <strong>Area Atuacao:</strong>
+  <%= @partner.area_atuacao %>
+</p>
+<p>
+  <strong>Ramo:</strong>
+  <%= @partner.ramo %>
+</p>
+<p>
+  <strong>Obs:</strong>
+  <%= @partner.obs %>
+</p>
+<p>
+  <strong>Contrato:</strong>
+  <%= @partner.contrato %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_partner_path(@partner) %> |
+  <%= link_to "Destroy", @partner, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", partners_path %>
+</p>

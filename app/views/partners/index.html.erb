@@ -1,0 +1,33 @@
+<% title "Partners" %>
+
+<table>
+  <tr>
+    <th>Razao Social</th>
+    <th>Cnpj</th>
+    <th>Telefones</th>
+    <th>Emails</th>
+    <th>Contatos</th>
+    <th>Area Atuacao</th>
+    <th>Ramo</th>
+    <th>Obs</th>
+    <th>Contrato</th>
+  </tr>
+  <% for partner in @partners %>
+    <tr>
+      <td><%= partner.razao_social %></td>
+      <td><%= partner.cnpj %></td>
+      <td><%= partner.telefones %></td>
+      <td><%= partner.emails %></td>
+      <td><%= partner.contatos %></td>
+      <td><%= partner.area_atuacao %></td>
+      <td><%= partner.ramo %></td>
+      <td><%= partner.obs %></td>
+      <td><%= partner.contrato %></td>
+      <td><%= link_to "Show", partner %></td>
+      <td><%= link_to "Edit", edit_partner_path(partner) %></td>
+      <td><%= link_to "Destroy", partner, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Partner", new_partner_path %></p>

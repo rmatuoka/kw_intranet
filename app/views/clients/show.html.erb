@@ -1,0 +1,44 @@
+<% title "Client" %>
+
+<p>
+  <strong>Razao Social:</strong>
+  <%= @client.razao_social %>
+</p>
+<p>
+  <strong>Cnpj:</strong>
+  <%= @client.cnpj %>
+</p>
+<p>
+  <strong>Telefones:</strong>
+  <%= @client.telefones %>
+</p>
+<p>
+  <strong>Emails:</strong>
+  <%= @client.emails %>
+</p>
+<p>
+  <strong>Contatos:</strong>
+  <%= @client.contatos %>
+</p>
+<p>
+  <strong>Area Atuacao:</strong>
+  <%= @client.area_atuacao %>
+</p>
+<p>
+  <strong>Ramo:</strong>
+  <%= @client.ramo %>
+</p>
+<p>
+  <strong>Obs:</strong>
+  <%= @client.obs %>
+</p>
+<p>
+  <strong>Contrato:</strong>
+  <%= @client.contrato %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_client_path(@client) %> |
+  <%= link_to "Destroy", @client, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", clients_path %>
+</p>

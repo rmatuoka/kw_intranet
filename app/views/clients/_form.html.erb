@@ -1,0 +1,40 @@
+<%= form_for @client do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :razao_social %><br />
+    <%= f.text_field :razao_social %>
+  </p>
+  <p>
+    <%= f.label :cnpj %><br />
+    <%= f.text_field :cnpj %>
+  </p>
+  <p>
+    <%= f.label :telefones %><br />
+    <%= f.text_area :telefones %>
+  </p>
+  <p>
+    <%= f.label :emails %><br />
+    <%= f.text_area :emails %>
+  </p>
+  <p>
+    <%= f.label :contatos %><br />
+    <%= f.text_area :contatos %>
+  </p>
+  <p>
+    <%= f.label :area_atuacao %><br />
+    <%= f.text_field :area_atuacao %>
+  </p>
+  <p>
+    <%= f.label :ramo %><br />
+    <%= f.text_field :ramo %>
+  </p>
+  <p>
+    <%= f.label :obs %><br />
+    <%= f.text_area :obs %>
+  </p>
+  <p>
+    <%= f.label :contrato %><br />
+    <%= f.text_field :contrato %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,21 @@
+one:
+  razao_social: MyString
+  cnpj: MyString
+  telefones: MyText
+  emails: MyText
+  contatos: MyText
+  area_atuacao: MyString
+  ramo: MyString
+  obs: MyText
+  contrato: MyString
+
+two:
+  razao_social: MyString
+  cnpj: MyString
+  telefones: MyText
+  emails: MyText
+  contatos: MyText
+  area_atuacao: MyString
+  ramo: MyString
+  obs: MyText
+  contrato: MyString
